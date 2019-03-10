@@ -40,7 +40,7 @@ for ins in que:
                     print(pr)
                 
         else:
-            print(inst) # special print baki hai avi
+            print(inst)
     
     if(cond):
         tr= False
@@ -83,13 +83,6 @@ for ins in que:
 
     
 
-
-
-
-
-    
-    
-    # if()
 
 
 
