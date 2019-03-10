@@ -1,0 +1,110 @@
+{
+    "stage1":[
+        {
+            "message":{
+                "text":"Hello! I'm Elth. I'm your personal assistant."
+            }
+        },
+        {
+            "message":{
+                "text":"Before starting please tell me your first name"
+            }
+        }
+    ],
+    "stage2":[
+        {
+            "message":{
+                "text":"Before starting please tell me your last name"
+            }
+        }
+    ],
+    "stage3":[
+        {
+            "message":{
+                "text":"And your gender?",
+                "quick_replies":[
+                    {
+                        "content_type":"text",
+                        "title":"Male",
+                        "payload":"male"
+                    },
+                    {
+                        "content_type":"text",
+                        "title":"Female",
+                        "payload":"female"
+                    }
+                ]
+            }
+        }
+    ],
+    "stage4":[
+        {
+            "message":{
+                "text":"May I know your age?"
+            }
+        }
+    ],
+    "stage5":[ #CONDITIONAL BLOCK DEPENDS ON WHETHER THE USER ENTERED A WRONG INPUT FOR AGE
+        {
+            "message":{
+                "text":"I couldn't quite get how that response can be your age :/ Please enter your valid age."
+            }
+        }
+    ],
+    "stage6":[
+        {
+            "message":{
+                "text":"Congratulations! Registration Successful."
+            }
+        }
+    ],
+    "stage7":[#IF I ENTER ANKUSH AS FIRST NAME AND BHATIA AS LAST NAME
+        {
+            "message":{
+                "text":"Hello Ankush Bhatia , How are you? For a sample of my work I can show you how to make a transpose of a 3X3 matrix."
+            }
+        },
+        {
+            "message":{
+                "text":"Enter the first row of the matrix(3 integers space seperated)."
+            }
+        }#I'LL ENTER 1 2 3 AS INPUT
+    ],
+    "stage8":[
+        {
+            "message":{
+                "text":"Enter the second row of the matrix(3 integers space seperated)."
+            }
+        }#I'LL ENTER 4 5 6 AS INPUT
+    ],
+    "stage9":[
+        {
+            "message":{
+                "text":"Enter the third row of the matrix(3 integers space seperated)."
+            }
+        }#I'LL ENTER 7 8 9 AS INPUT
+    ],
+    "stage10":[
+        {
+            "message":{
+                "text":"This is the transpose of the input matrix"
+            }
+        },
+        {
+            "message":{
+                "text":"Row 1 : [1, 4, 7]"
+            }
+        },
+        {
+            "message":{
+                "text":"Row 2 : [2, 5, 8]"
+            }
+        },
+        {
+            "message": {
+                "text": "Row 3 : [3, 6, 9]"
+            }
+        }
+
+    ]
+}

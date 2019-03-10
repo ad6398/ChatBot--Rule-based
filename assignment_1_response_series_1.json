@@ -1,0 +1,79 @@
+{
+  "stage1": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "Hello! I'm Elth. I'm your personal assistant."
+        }
+      },
+      {
+        "message": {
+          "text": "Before starting please tell me your first name"
+        }
+      }
+    ],
+    "User Says": "Srinath"
+  },
+  "stage2": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "Before starting please tell me your last name"
+        }
+      }
+    ],
+    "User Says": "Akula",
+    
+  },
+  "stage3": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "And your gender?",
+          "quick_replies": [
+            {
+              "content_type": "text",
+              "title": "Male",
+              "payload": "male"
+            },
+            {
+              "content_type": "text",
+              "title": "Female",
+              "payload": "female"
+            }
+          ]
+        }
+      }
+    ],
+    "User Says": "Male"
+  },
+  "stage4": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "May I know your age?"
+        }
+      }
+    ],
+    "User Says": "what's your age?"
+  },
+  "stage5": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "I couldn't quite get how that response can be your age :/ Please enter your valid age."
+        }
+      }
+    ],
+    "User Says": "31 yrs"
+  },
+  "stage6": {
+    "Bot Says": [
+      {
+        "message": {
+          "text": "Congratulations! Registration Successful."
+        }
+      }
+    ]
+  }
+}
